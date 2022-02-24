@@ -59,6 +59,13 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -147,9 +154,15 @@ section {
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
+    background-color: rgba(255,255,255,0.75);
     width: 100%;
     margin-bottom: 15px;
     border-radius: 15px;
+}
+
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -160,6 +173,10 @@ button {
     background-color: #024e76;
     color: #fce138;
     border-radius: 15px;
+}
+
+.hero-form button:hover{
+    background-color: #39a6b2;
 }
 
 .steps {
@@ -197,11 +214,14 @@ button {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -336,10 +356,16 @@ button {
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
+    background-color: rgba(255,255,255,0.75);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 15px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255,1);
+    outline: none;
 }
 
 .contact-form button {
@@ -352,6 +378,11 @@ button {
     font-size: 16px;
     border-radius: 15px;
 
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 
 .contact-info iframe {
